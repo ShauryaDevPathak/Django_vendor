@@ -61,13 +61,14 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
             "address": "789 Elm Street",
             "vendor_code": "vendor456"
         }
+      <br/>
     - The vendor_id is derived from “id” column. This column is automatic incrementing integer column.<br/>Therefore, any new POST you make will be assigned a number starting from 1.
     - If a vendor is deleted, the vendor_id which is not empty will not be used by some other vendor
 
 - **For Orders:**
     - Go to the respective end points and use the get, post, put and delete methods as you please.
     - For post and put methods you must give input as a JSON.
-    - Some examples of JSON:
+    - Some examples of JSON:<br/>
         {
         "po_number": "abc3",
         "vendor": 5,
@@ -81,6 +82,7 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
         "issue_date": "2024-05-01T03:30:52Z",
         "acknowledgment_date": "2024-05-01T03:46:46.551265Z"
         }
+      <br/>
     - The purchaseorder_id is derived from “id” column. This column is automatic incrementing integer column. Therefore, any new POST you make will be assigned a number starting from 1.
     - If an order is deleted, the purchaseorder_id which is not empty will not be used by some other order
     - **Note:** for updating the metrics the status should be “completed.” Use PUT to update the status and update the metrics
