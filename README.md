@@ -2,7 +2,7 @@
 Vendor_management_system_api
 
 # Different API endpoints:
--	“GET”, “POST” all vendors:
+-	“GET”, “POST” all vendors: <br/>
 Go to http://127.0.0.1:8000/api/vendors
 - “GET”, “PUT”, “DELETE” a specific vendor based on vendor_id:
 Go to http://127.0.0.1:8000/api/vendors/<vendor_id>
