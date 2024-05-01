@@ -2,6 +2,10 @@
 Vendor_management_system_api<br/>
 **Note:** *The "Test.pdf" contains the demonstration*
 
+# Starting the project:
+- Download and extract the zip file
+- Open _mysite_ file and open a terminal
+- **Run:** python manage.py runserver
 # Different API endpoints:
 -	**“GET”, “POST” all vendors: <br/>**
 Go to http://127.0.0.1:8000/api/vendors
