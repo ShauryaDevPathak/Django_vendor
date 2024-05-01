@@ -86,3 +86,7 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
     - The purchaseorder_id is derived from “id” column. This column is automatic incrementing integer column. Therefore, any new POST you make will be assigned a number starting from 1.
     - If an order is deleted, the purchaseorder_id which is not empty will not be used by some other order
     - **Note:** for updating the metrics the status should be “completed.” Use PUT to update the status and update the metrics
+
+- **For acknowledgement Api:**
+    - Go to the api end point and click on POST with no input.
+    - The performance metrics are updated automatically
