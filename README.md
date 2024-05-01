@@ -29,13 +29,33 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
 # Test for Token-based-authentication:
 - Going to the API endpoints directly will give you error since token-based-authentication is on<br/>
 - To test this authentication, do the following steps:<br/>
-    +Go to http://127.0.0.1:8000/admin<br/>
-    +Go to “Tokens”<br/>
-    +Click on add tokens<br/>
-    +Select admin (or any other superuser name)<br/>
-    +Open a terminal in the project directory and type the following command:<br/>
+    -Go to http://127.0.0.1:8000/admin<br/>
+    -Go to “Tokens”<br/>
+    -Click on add tokens<br/>
+    -Select admin (or any other superuser name)<br/>
+    -Open a terminal in the project directory and type the following command:<br/>
       curl -X GET http://127.0.0.1:8000/api/vendors -H 'Authorization: Token [your token]'<br/>
 **Note:** *insert your token in [your token] part of the command*<br/>
-  - JSON of the existing vendors should be displayed on the terminal<br/>
+- JSON of the existing vendors should be displayed on the terminal<br/>
 
-
+# Running the tests for API:
+- You must disable the token-authentication to run the following tests.
+    - Go to mysite/api/views.py and comment out all the lines containing:
+      @authentication_classes([TokenAuthentication])<br/>
+      @permission_classes([IsAuthenticated])<br/>
+- **For Vendors:**
+    - Go to the respective end points and use the get, post, put and delete methods as you please.
+    - For post and put methods you must give input as a JSON.
+    - Some examples of JSON:
+        {
+            "name": "Vendor One",
+            "contact_details": "2341563748",
+            "address": "123 Test Street",
+            "vendor_code": "vendor123"
+        },
+        {
+            "name": "Vendor Three",
+            "contact_details": "2647893674",
+            "address": "789 Elm Street",
+            "vendor_code": "vendor456"
+        }
