@@ -1,5 +1,6 @@
 # Django_vendor
 Vendor_management_system_api
+**Note:** *The "Test.pdf" contains the demonstration*
 
 # Different API endpoints:
 -	**“GET”, “POST” all vendors: <br/>**
