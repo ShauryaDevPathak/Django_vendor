@@ -47,6 +47,7 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
     - Go to the respective end points and use the get, post, put and delete methods as you please.
     - For post and put methods you must give input as a JSON.
     - Some examples of JSON:
+      <br/>
         {
             "name": "Vendor One",
             "contact_details": "2341563748",
@@ -60,3 +61,5 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
             "address": "789 Elm Street",
             "vendor_code": "vendor456"
         }
+    - The vendor_id is derived from “id” column. This column is automatic incrementing integer column.<br/>Therefore, any new POST you make will be assigned a number starting from 1.
+    - If a vendor is deleted, the vendor_id which is not empty will not be used by some other vendor
