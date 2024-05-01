@@ -52,7 +52,8 @@ You can fill the database from the admin page. Go to http://127.0.0.1:8000/admin
             "contact_details": "2341563748",
             "address": "123 Test Street",
             "vendor_code": "vendor123"
-        },
+        }
+      <br/>
         {
             "name": "Vendor Three",
             "contact_details": "2647893674",
